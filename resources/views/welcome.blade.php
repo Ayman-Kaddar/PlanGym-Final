@@ -38,7 +38,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar" id="navbarSupportedContent">
 
             <ul class="navbar-nav ms-auto">
               <nav class="nav">
@@ -148,8 +148,8 @@
               <img src="https://zen-ritchie-70b7e0.netlify.app/img/trainer-1.jpg" alt="" />
             </div>
             <div class="content">
-              <h3>Strength Trainer</h3>
-              <h4>Ivan Samkov</h4>
+              <h3>Entrenador Personal</h3>
+              <h4>Jesus Gargallo</h4>
               <p>
                 Utilizo PlanGym porque me esfuerzo por hacer VISIBLE lo invisible
               </p>
@@ -166,8 +166,8 @@
               <img src="https://zen-ritchie-70b7e0.netlify.app/img/trainer-2.jpg" alt="" />
             </div>
             <div class="content">
-              <h3>Strength Trainer</h3>
-              <h4>Ivan Samkov</h4>
+              <h3>Entrenadora Personal</h3>
+              <h4>Natalia Samkov</h4>
               <p>
                 ¡La web me ayuda a motivarme a ser una atleta más fuerte en el gimnasio!
               </p>
@@ -184,8 +184,8 @@
               <img src="https://zen-ritchie-70b7e0.netlify.app/img/trainer-3.jpg" alt="" />
             </div>
             <div class="content">
-              <h3>Strength Trainer</h3>
-              <h4>Ivan Samkov</h4>
+              <h3>Entrenador Personal</h3>
+              <h4>Ayman Kaddar</h4>
               <p>
                 ¡Velocidad de la información! ¡Con PlanGym mis atletas no desperdician una repetición!
               </p>
@@ -208,15 +208,12 @@
               <div class="pricing-table-month">
                 <div class="pricing-table-head">
                   <h2>BASICO</h2>
-                  <h3><sup>$ </sup>30<sub>/MES</sub></h3>
+                  <h3><sup>30 </sup>€<sub>/MES</sub></h3>
                 </div>
                 <ul class="pricing-table-list">
-                  <li><span>256MB</span> Almacenamiento</li>
-                  <li><span>1 </span>Usuario</li>
-                  <li><span>1 </span>Sitio web</li>
-                  <li><span>1 </span>Dominio</li>
-                  <li><span>Ilimitado </span>Ancho de Banda</li>
-                  <li><span>Ilimitados </span>Correos</li>
+                  <li><span>3</span> Sesiones</li>
+                  <li><span>3 </span>Clases de Hist</li>
+                  <li><span>2 </span>Guia de Nutricion</li>
                 </ul>
               </div>
             </div>
@@ -227,15 +224,12 @@
               <div class="pricing-table-month">
                 <div class="pricing-table-head estandar-title">
                   <h2>ESTANDAR</h2>
-                  <h3><sup>$ </sup>60<sub>/MES</sub></h3>
+                  <h3><sup>60 </sup>€<sub>/MES</sub></h3>
                 </div>
                 <ul class="pricing-table-list">
-                  <li><span>256MB</span> Almacenamiento</li>
-                  <li><span>1 </span>Usuario</li>
-                  <li><span>1 </span>Sitio web</li>
-                  <li><span>1 </span>Dominio</li>
-                  <li><span>Ilimitado </span>Ancho de Banda</li>
-                  <li><span>Ilimitados </span>Correos</li>
+                  <li><span>6</span> Sesiones</li>
+                  <li><span>6 </span> Clases de Hist</li>
+                  <li><span>4 </span> Guia de Nutricion</li>
                 </ul>
               </div>
             </div>
@@ -246,15 +240,12 @@
               <div class="pricing-table-month">
                 <div class="pricing-table-head">
                   <h2>PREMIUM</h2>
-                  <h3><sup>$ </sup>90<sub>/MES</sub></h3>
+                  <h3><sup>90 </sup>€<sub>/MES</sub></h3>
                 </div>
                 <ul class="pricing-table-list">
-                  <li><span>256MB</span> Almacenamiento</li>
-                  <li><span>1 </span>Usuario</li>
-                  <li><span>1 </span>Sitio web</li>
-                  <li><span>1 </span>Dominio</li>
-                  <li><span>Ilimitado </span>Ancho de Banda</li>
-                  <li><span>Ilimitados </span>Correos</li>
+                  <li><span>9</span> Sesiones</li>
+                  <li><span>9 </span>Clases de Hist</li>
+                  <li><span>6 </span>Guia de Nutricion</li>
                 </ul>
               </div>
             </div>
