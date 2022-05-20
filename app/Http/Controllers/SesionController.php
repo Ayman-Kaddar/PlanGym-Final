@@ -19,15 +19,12 @@ class SesionController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     * 
-     * INDEX CLIENT
-     * 
      */
     public function index()
     {
         $user = auth()->id();
         $userDB = DB::table('users')->where('id', $user)->first();
-        
+
         if ($userDB->person == "client") {
             if (Sesion::where('id_client', $user) != null) {
                 $sessions = Sesion::where('id_client', $user)->orderBy('day', 'DESC')->get();
