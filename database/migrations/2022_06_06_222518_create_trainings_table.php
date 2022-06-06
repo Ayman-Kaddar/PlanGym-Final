@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('sesions', function (Blueprint $table) {
+        Schema::create('trainings', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->unsignedBigInteger('id_session');
+            $table->unsignedBigInteger('id_name_training');
             $table->integer('weight')->nullable();
             $table->integer('repetition')->nullable();
             $table->integer('time')->nullable();
@@ -23,11 +24,9 @@ return new class extends Migration
             $table->string('start_time');
             $table->string('finish_time')->nullable();
             $table->longText('remark')->nullable();
-            $table->unsignedBigInteger('id_client');
             $table->timestamps();
 
-            $table->foreign('id_client')->references('id')->on('users');
-
+            
         });
     }
 
@@ -38,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sesions');
+        Schema::dropIfExists('trainings');
     }
 };
