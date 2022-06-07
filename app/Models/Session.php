@@ -17,4 +17,8 @@ class Session extends Model
         return $this->hasOne(Person::class);
     }
 
+    public function training() {
+        return $this->hasMany(Training::class);
+    }
+
 }

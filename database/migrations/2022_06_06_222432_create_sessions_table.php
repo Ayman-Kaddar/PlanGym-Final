@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date('day');
             $table->timestamps();
 
-            
+            $table->foreign('id_person')->references('id')->on('people');
 
         });
     }

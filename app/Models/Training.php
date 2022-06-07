@@ -19,8 +19,4 @@ class Training extends Model
         'remark'
     ];
 
-    public function session() {
-
-    }
-
 }

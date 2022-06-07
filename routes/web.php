@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SesionController;
+use App\Http\Controllers\SessionController;
 use App\Models\Sesion;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -27,9 +28,9 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //Route::resource('session', SesionController::class);
 
-Route::get('session', [SesionController::class, 'index'])
+Route::get('session', [SessionController::class, 'index'])
     ->name('session.index');
-Route::get('session/training{id}', [SesionController::class, 'indexSessionTrainer'])
+/* Route::get('session/training{id}', [SesionController::class, 'indexSessionTrainer'])
     ->name('session.training');
 Route::post('session', [SesionController::class, 'store'])
     ->name('session.store');
@@ -37,4 +38,4 @@ Route::post('session/training', [SesionController::class, 'updateSession'])
     ->name('session.update');
 Route::delete('session/{sesion}', [SesionController::class, 'destroy'])
     ->name('session.destroy');
-
+ */

@@ -11,12 +11,17 @@ class Person extends Model
 
     protected $fillable = [
         'name',
+        'lname',
         'tel',
         'age',
         'gender',
+        'role',
+        'id_user'
     ];
 
-    public function user () {
+    
+    public function user() {
         return $this->hasOne(User::class);
     }
+
 }

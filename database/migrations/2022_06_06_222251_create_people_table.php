@@ -21,7 +21,10 @@ return new class extends Migration
             $table->integer('tel');
             $table->integer('age');
             $table->string('gender');
+            $table->string('role');
             $table->timestamps();
+
+            $table->foreign('id_user')->references('id')->on('users');
 
         });
     }

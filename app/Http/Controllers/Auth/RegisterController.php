@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Person;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -36,10 +37,6 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
 
     /**
      * Get a validator for an incoming registration request.
@@ -69,15 +66,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+
+        User::create([
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
+
+        $user = User::orderBy('id', 'DESC')->take(1)->get();
+
+        Person::create([
             'name' => $data['name'],
             'lname' => $data['lname'],
-            'email' => $data['email'],
             'tel' => $data['tel'],
             'age' => $data['age'],
             'gender' => $data['gender'],
-            'person' => "client",
-            'password' => Hash::make($data['password']),
+            'role' => "client",
+            'id_user' => $user->id,
         ]);
+
+
     }
 }

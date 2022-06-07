@@ -1,5 +1,3 @@
-
-
 <div class="d-flex h-100 m-0 p-0">
     {{-- 
         SIDEBAR
@@ -22,6 +20,9 @@
                 <i class="fa-solid fa-person"></i>
                 Clientes
               </a>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
           </li>
         </ul>
         <hr>
